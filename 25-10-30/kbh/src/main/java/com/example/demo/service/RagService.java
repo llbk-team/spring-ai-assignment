@@ -51,7 +51,7 @@ public class RagService {
     // 메타데이터 추가
     for(Document doc : documents){
       doc.getMetadata().put("source", source);
-    }
+    } 
 
     // T
     DocumentTransformer documentTransformer = new TokenTextSplitter(chunkSize, minChunkSizeChars, 0, 10000, true);
